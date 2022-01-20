@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Musiak, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in-doc-styling-in-CSS-below-->
+    <style>
+        /*in here we must write in CSS*/
+
+        /*SELECTING in CSS & Javascript: select/choose specific element (s) on a page for stlying or manipulation: :after
+            *by ELEMENT/TAG type            ex. body, div, p
+            *by ID attribute name           ex. #wrapper, #footer
+            *by CLASS attribute name        coming in W3 
+            */
+
+            div {   /*applies to ALL div elements on the page*/
+                border:1px solid black;
+                padding:10px;
+                margin:5px;
+            }
+
+            #wrapper {/*applies ONLY to the element with an ID of "wrapper" */
+                background-color: salmon;}
+            #schools {background-color: aqua;}    
+            #nav, #footer {background-color: plum;}
+
+    </style>
+</head>
+<body style="background-color: beige;">
+    <!--this div holds and wraps around all content on the page-->
+    <div id="wrapper">
+        <!--ID names can only be used 1px per page-->
+        <h1>Julia Musiak (very cool and awesome)</h1>
+        <!--nav-bar-->
+            <div id="nav">
+
+                <!--linking to OUTSIDE pages [not apart of our site]-->
+                <a href="https://www.meca.edu" target="_blank">Visit MECA!</a>
+                <!--href holds the URL of the site you are linking to-->
+
+                <!--linking to inernal pages [.htmls that exist in your current directory]-->
+                <a href="page2.html">Page 2</a>
+
+                <!--IN-PAGE LINKING [jumping two sections of the current page]-->
+
+                <!--FRAGMENT LINKS [jumping to a specific point on another page]-->
+
+            </div> <!--/ #nav-->
+
+        <!--BIO-SECTION-->
+                <div id="bio">
+
+                    <h2>About Me</h2>
+                        <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.
+                            A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. 
+                            You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand
+                             miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing
+                            and the wall.</p>
+                        
+                        <!--REMOTE IMG- [img file not found in root directory, need to use an absolute path (URL + URI at end)]-->
+                        <!--AVOID REMOTE IMG AT ALL COSTS!-->
+                        <img src="https://i.pinimg.com/280x280_RS/ca/41/ad/ca41ad7515dad4b3c8da53539227097a.jpg" alt="This Is Me" style="width:500px;"
+                         title="This Is Me">
+
+                         <!--RELATIVE IMG- [img file exists in root directory]-->
+                         <img src="images/stormsEnd.jpg" alt="Illustration of Storm's End seaside castle in summer" style="width:500px;">
+
+                </div><!--/ #bio-->
+
+        <!--SCHOOLS-SECTION-->
+                <div id="schools">
+
+                </div> <!--/ #schools-->
+
+        <!--HOBBIES-SECTION-->
+                <div id="hobbies">
+
+                </div> <!--/ #hobbies-->
+
+        <!--FOOTER-->
+                <div id="footer">
+
+                </div> <!--/ #footer-->
+
+    </div>
+</body>
+</html>
