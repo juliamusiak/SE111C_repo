@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Musiak">
+    <meta name="description" content="w3 demo">
+
+    <title>Week 3 | Bio</title>
+
+    <style>
+        /*writing in CSS*/
+        div { /* selects all of the elements of this type on the page*/
+
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+        #wrapper { /*selects one element. the one with the id of wrapper*/
+
+            background-color: burlywood;
+            width: 900px;
+            margin: auto; /*affects left and right sides of the element when a width is app*/
+        }
+        .border { /*select all with class of border*/
+            border: 2px solid goldenrod;
+        }
+        
+        .bg-main {
+            background-color: honeydew;
+        }
+
+        #nav {
+            border:1px solid darkslategray;
+        }
+
+        .title {/* elements of different types can still be classed with others*/
+            color: darkolivegreen;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+    <!--wrapper - contains all content on page-->
+    <div id="wrapper">
+
+        <div id="header" class="border bg-main">
+
+            <h1 class="title">Julia Musiak</h1>
+
+        </div>
+
+        <!--nav bar- holds links to other pages within the site-->
+
+        <div id="nav" class="border">
+
+            <a href="index.html" class="button">HOME</a>
+            <a href="about.html" class="button">ABOUT</a>
+            <a href="schools.html" class="button">SCHOOLS</a>
+            <a href="hobbies.html" class="button">HOBBIES</a>   
+
+        </div> <!--/ #nav-->
+
+        <div id="content" class="border">
+           
+            <p class="title">Schools</p>
+
+        </div> <!--/ #content-->
+
+        <div id="footer" class="border bg-main">
+
+            <a href="#header">Back to Top</a>
+            <br>
+            <p>&copy; 2022, J Musiak | SE111C.HS</p>
+            
+            <!--img of validation insert below-->
+
+        </div> <!--/ #footer-->
+
+    </div> <!--/wrapper-->
+   
+
+</body>
+</html>
