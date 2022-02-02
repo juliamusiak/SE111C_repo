@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Musiak">
+    <meta name="description" content="w3 demo">
+
+    <title>Week 3 | Bio</title>
+
+    <style>
+        /*writing in CSS*/
+        div { /* selects all of the elements of this type on the page*/
+            border:1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #wrapper { /*selects one element. the one with the id of wrapper*/
+
+            background-color: burlywood;
+            width: 900px;
+            margin: auto; /*affects left and right sides of the element when a width is app*/
+        }
+        .border { /*select all with class of border*/
+            border: 2px solid goldenrod;
+        }
+
+        .bg-main {
+            background-color: honeydew;
+        }
+
+        .button {
+            width: 150px;
+            background-color: darkolivegreen;
+            color: darkgray;
+            font-size: 26px;
+            margin-right: 20px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: bisque;
+            color: chocolate;
+        }
+
+        #footer {
+            text-align: center;
+        }
+        
+        #main-content {
+            color: darkslategray;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    
+    <!--wrapper - contains all content on page-->
+    <div id="wrapper">
+
+        <div id="header" class="border bg-main">
+
+            <h1 class="title">Julia Musiak</h1>
+
+        </div>
+
+        <!--nav bar- holds links to other pages within the site-->
+
+        <div id="nav" class="border">
+
+            <a href="index.html" class="button">HOME</a>
+            <a href="about.html" class="button">ABOUT</a>
+            <a href="schools.html" class="button">SCHOOLS</a>
+            <a href="hobbies.html" class="button">HOBBIES</a>   
+
+        </div> <!--/ #nav-->
+
+        <div id="main-content" class="border">
+           
+            <h2 class="title">Schools I Have Gone To</h2>
+
+            <ol>
+                <li>Little Red Hen Pre-School and Kindergarden</li>
+                <li>Sweet Peas Village</li>
+                <li>Forest Park Elementary School</li>
+                <li>Eldredge Elementary School</li> 
+                <li>Cole Middle School </li>
+                <li>East Greenwich High School</li>
+            </ol>
+
+
+        </div> <!--/ #content-->
+
+        <div id="footer" class="border bg-main">
+
+            <a href="#header">Back to Top</a>
+            <br>
+            <p>&copy; 2022, J Musiak | SE111C.HS</p>
+            
+            <!--img of validation insert below-->
+
+        </div> <!--/ #footer-->
+
+    </div> <!--/wrapper-->
+
+ 
+
+</body>
+</html>
