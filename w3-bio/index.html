@@ -29,8 +29,8 @@
 
         .bg-main {
             background-color: honeydew;
-        }
 
+        }
 
         .title {/* elements of different types can still be classed with others*/
             color: darkolivegreen;
@@ -39,11 +39,16 @@
         .button {
             width: 150px;
             background-color: darkolivegreen;
-            color: darkgray;
+            color: whitesmoke;
             font-size: 26px;
             margin-right: 20px;
-            padding: 10px;
+            padding: 10px 10px;
             text-decoration: none;
+            display: inline-block;
+            cursor:grab;
+            transition-duration: 0.3s;
+            box-shadow: 0 5px;
+            border-radius: 5px;
         }
 
         .button:hover {
@@ -55,6 +60,10 @@
             text-align: center;
         }
         
+        body {
+            background-image: url("images/rr.webp");
+        }
+
     </style>
 
 
@@ -65,7 +74,7 @@
     <!--wrapper - contains all content on page-->
     <div id="wrapper">
 
-        <div id="header" class="border bg-main">
+        <div id="header" class="border bg-main" style="text-align: center;">
 
             <h1 class="title">Julia Musiak</h1>
 
@@ -73,7 +82,7 @@
 
         <!--nav bar- holds links to other pages within the site-->
 
-        <div id="nav" class="border">
+        <div id="nav" class="border" style="text-align: center;">
 
             <a href="index.html" class="button">HOME</a>
             <a href="about.html" class="button">ABOUT</a>
@@ -84,13 +93,20 @@
 
         <div id="content" class="border">
            
-            <p class="title">Home Page</p>
+            <h2 class="title">Home</h2>
+
+            <img src="images/3E3CD32B-5F52-462F-966A-ACDAC9528A46.jpg" alt="Looking down at the ski course ahead of me at 
+            Mount Hood" style="width: 100%;">
+            <br>
+            <hr>
+            <br>
+            <img src="images/IMG_2021.JPG" alt="Abnormally large trees on the side of the road" style="width: 100%;">
 
         </div> <!--/ #content-->
 
         <div id="footer" class="border bg-main">
 
-            <a href="#header">Back to Top</a>
+            <a href="#header" class="button">Back to Top</a>
             <br>
             <p>&copy; 2022, J Musiak | SE111C.HS</p>
             

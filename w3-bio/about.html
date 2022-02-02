@@ -38,11 +38,16 @@
         .button {
             width: 150px;
             background-color: darkolivegreen;
-            color: darkgray;
+            color: whitesmoke;
             font-size: 26px;
             margin-right: 20px;
-            padding: 10px;
+            padding: 10px 10px;
             text-decoration: none;
+            display: inline-block;
+            cursor:grab;
+            transition-duration: 0.3s;
+            box-shadow: 0 5px;
+            border-radius: 5px;
         }
 
         .button:hover {
@@ -50,6 +55,7 @@
             color: chocolate;
         }
 
+    
         #footer {
             text-align: center;
         }
@@ -62,6 +68,10 @@
             color: darkslategray;
         }
         
+        body {
+            background-image: url("images/rr.webp");
+        }
+
     </style>
 
 
@@ -72,7 +82,7 @@
     <!--wrapper - contains all content on page-->
     <div id="wrapper">
 
-        <div id="header" class="border bg-main">
+        <div id="header" class="border bg-main" style="text-align: center;">
 
             <h1 class="title">Julia Musiak</h1>
 
@@ -80,7 +90,7 @@
 
         <!--nav bar- holds links to other pages within the site-->
 
-        <div id="nav" class="border">
+        <div id="nav" class="border" style="text-align: center;">
 
             <a href="index.html" class="button">HOME</a>
             <a href="about.html" class="button">ABOUT</a>
@@ -90,9 +100,13 @@
         </div> <!--/ #nav-->
 
         <div id="main-content" class="border">
-           
-            <h2 class="title">About Me</h2>
+            <br>
+            <h2 class="title" style="text-align: center;">About Me</h2>
+            <br>
+
             <hr>
+
+            <br>
             <p>Over winter, I go skiing with my family.
                 We ski at <b>Okemo Mountain</b>, in Vermont. In February, my family 
                and I are going on a trip to <u>Colorado</u> to go skiing. We are going with our family 
@@ -100,12 +114,20 @@
               Sometimes, my family friends and I wear onesies of various characters from movies and shows, 
                like <i>Olaf from Frozen</i>. Skiing makes me happy, especially when I see the view of the 
               mountains and skyline.</p>
+            <br>  
 
+            <img src="images/IMG_2044.JPG" alt="A photo of Mount Hood in the morning; it was so pretty that morning that 
+            the van driver stopped to take a photo of it as well" style="width: 100%;">
+            <br>
+            <hr>
+            <br>
+            <img src="images/IMG_2029.jpg" alt="skiing above the clouds at Mount Hood in Oregon" style="width: 100%;">
+            <br>
         </div> <!--/ #content-->
 
         <div id="footer" class="border bg-main">
 
-            <a href="#header">Back to Top</a>
+            <a href="#header" class="button">Back to Top</a>
             <br>
             <p>&copy; 2022, J Musiak | SE111C.HS</p>
             
@@ -114,8 +136,6 @@
         </div> <!--/ #footer-->
 
     </div> <!--/wrapper-->
-
- 
 
 </body>
 </html>

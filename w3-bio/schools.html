@@ -34,11 +34,16 @@
         .button {
             width: 150px;
             background-color: darkolivegreen;
-            color: darkgray;
+            color: whitesmoke;
             font-size: 26px;
             margin-right: 20px;
-            padding: 10px;
+            padding: 10px 10px;
             text-decoration: none;
+            display: inline-block;
+            cursor:grab;
+            transition-duration: 0.3s;
+            box-shadow: 0 5px;
+            border-radius: 5px;
         }
 
         .button:hover {
@@ -54,6 +59,10 @@
             color: darkslategray;
         }
 
+        body {
+            background-image: url("images/rr.webp");
+        }
+
     </style>
 
 
@@ -64,7 +73,7 @@
     <!--wrapper - contains all content on page-->
     <div id="wrapper">
 
-        <div id="header" class="border bg-main">
+        <div id="header" class="border bg-main" style="text-align: center;">
 
             <h1 class="title">Julia Musiak</h1>
 
@@ -72,7 +81,7 @@
 
         <!--nav bar- holds links to other pages within the site-->
 
-        <div id="nav" class="border">
+        <div id="nav" class="border" style="text-align: center;">
 
             <a href="index.html" class="button">HOME</a>
             <a href="about.html" class="button">ABOUT</a>
@@ -83,7 +92,7 @@
 
         <div id="main-content" class="border">
            
-            <h2 class="title">Schools I Have Gone To</h2>
+            <h2 class="title" style="text-align: center;">Schools I Have Gone To</h2>
 
             <ol>
                 <li>Little Red Hen Pre-School and Kindergarden</li>
@@ -94,12 +103,17 @@
                 <li>East Greenwich High School</li>
             </ol>
 
+            <br>
+            <hr>
+            <br>
+            <img src="images/IMG_1457.jpg" alt="Sydney, Katerina, and I sit doing math during math class" style="width: 50%;">
+            <br>
 
         </div> <!--/ #content-->
 
         <div id="footer" class="border bg-main">
 
-            <a href="#header">Back to Top</a>
+            <a href="#header" class="button">Back to Top</a>
             <br>
             <p>&copy; 2022, J Musiak | SE111C.HS</p>
             
