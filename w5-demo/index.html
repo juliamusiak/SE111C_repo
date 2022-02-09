@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <metaname="description" content="Week 5 demo">
+    <meta name="author" content="Julia Musiak">
+
+    <title>W5 | Demo - Forms & Tables</title>
+
+</head>
+<body>
+    
+    <h2>Basic Table</h2>
+
+    <table>
+        <thead> <!--colomn headers (makes the table more organized)-->
+            <tr> <!--tr= table row - must be the outter element-->
+
+                <td>Name</td> <!--td= table data cell; one td for each column-->
+
+                <td>School</td>
+
+                <td>Age</td>
+
+            </tr>
+        </thead>
+
+        <tbody> <!--must have a tbody in a table-- for main content of the table-->
+
+            <tr>
+                <td>Aereis</td>
+                <td>Classical HS</td>
+                <td>17</td>
+            </tr>
+
+            <tr>
+                <td>Tucker</td>
+                <td>Cranston West HS</td>
+                <td>14</td>
+            </tr>
+
+            <tr>
+                <td>Samantha (EWWWWW)</td>
+                <td>East Greenwich HS</td>
+                <td>17</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot> <!--for final sums/counts- for organization-->
+
+        </tfoot>
+
+    </table>
+
+    <h2>Basic Form w/o Table</h2>
+
+    <form method="GET" action="index.html">
+
+        <!--<label> is a text imput for the inputs-->
+        <label for="firstname">First Name</label>
+
+            <!--<input> gaining text from a user-->
+            <!--name attribute builds the query string-->
+        <input type="text" id="firstname" name="firstname"> 
+            <!--submit button! this connects to the method + action of the <form>; query
+                 string "needs" it to build-->
+        <br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <br>
+
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    <h2>Basic Form w/ Table</h2>
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td> <!--left column' labels-->
+                        <label for="firstname">First Name</label>
+                    </td>
+
+                    <td> <!--right column' input-->
+                        <input type="text" id="firstname" name="firstname"> 
+                    </td>
+                </tr>
+                   
+                <tr>
+                    <td> 
+                        <label for="email">Email</label>
+                    </td>
+
+                    <td> 
+                        <input type="text" id="email" name="email" required>
+                    </td>
+                </tr>
+
+                <!--type attribute determines input type-->
+
+                <tr>
+                    <td>
+                        <label for="date">Date</label>
+                    </td>
+                    <td>
+                        <input type="date" id="date" name="date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="comments">Comments</label>
+                    </td>
+                    <td>
+                        <textarea id="comments" name="comments" rows="5" cols="20" 
+                        placeholder="you stank please write for me or else"
+                        maxlength=100></textarea>
+                    </td>
+                </tr>
+
+                <!--non text input types-->
+                <!--these rely on value attributes to build the query string-->
+                <tr>
+                    <td>
+                        <label for="favecolor">Favorite Color</label>
+                    </td>
+
+                    <td>
+                        <select name="favecolor">
+
+                            <option value="r">Red</option>
+                            <option value="g">Green</option>
+                            <option value="b">Blue</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="study"> Choose Your Study</label>
+                    </td>
+                    <td>
+                        <!--radio buttons -- circles- can only choose one out of a set (set is determined by matching name values)-->
+                        <input type="radio" value="se" name="study"> Software Engineering
+                        <input type="radio" value="cyb" name="study"> Cybersecurity
+                        <input type="radio" value="und" name="study"> Undecided
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="vehicle">Choose Your Vehicles</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="vehicle1" value="car">Car <br>
+                        <input type="checkbox" name="vehicle2" value="ship">Ship <br>
+                        <input type="checkbox" name="vehicle3" value="dragon">Dragon <br>
+                        <input type="checkbox" name="vehicle4" value="horse">Horse <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Don't Click Me Please"></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+</html>
