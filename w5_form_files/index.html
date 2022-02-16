@@ -17,7 +17,7 @@
     <!--Build your Table and Form here-->
     <h1>Birthday Party Registration Form</h1>
 
-    <form>
+    <form action="confirm.html" method="GET">
 
         <table>
             <thead>
@@ -102,48 +102,81 @@
 
                 <tr>
                     <td>
-                        <label for=""></label>
+                        <label for="size">Size</label>
                     </td>
                     <td>
-                        <input>
-                        <input>
-                        <input>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="">Number of Guests</label>
-                    </td>
-                    <td>
-                        <input type="number" name="guests" value="5">
+                        <input type="radio" name="size" value="sm"> Small
+                        <input type="radio" name="size" value="md"> Medium
+                        <input type="radio" name="size" value="lg"> Large  
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <label for="">Number of Guests</label>
+                        <label for="drinks">Drinks</label>
                     </td>
                     <td>
-                        <input type="number" name="guests" value="5">
+                        <label for="drink1">Coke</label>
+                        <input type="checkbox" name="drink1" value="coke"> 
+                        <br>
+                        <label for="drink2">Sprite</label>
+                        <input type="checkbox" name="drink2" value="sprite">
+                        <br> 
+                        <label for="drink3">Fruit Punch</label>
+                        <input type="checkbox" name="drink3" value="fruit-punch">
+                        <br> 
+                        <label for="drink4">Lemonade</label>
+                        <input type="checkbox" name="drink4" value="lemonade">
+                        <br>
+                        <label for="drink5">Iced Tea</label> 
+                        <input type="checkbox" name="drink5" value="iced-tea"> 
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <label for="">Number of Guests</label>
+                        <label for="cake">Cake</label>
                     </td>
                     <td>
-                        <input type="number" name="guests" value="5">
+                        <select name="cake">
+                            <option value="cake">Chocolate</option>
+                            <option value="cake">Vanilla</option>
+                            <option value="cake">I'll Birng My Own</option>
+                        </select>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <label for="">Number of Guests</label>
+                        <label><h2>Decorations</h2></label>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="color">Color Scheme</label>
                     </td>
                     <td>
-                        <input type="number" name="guests" value="5">
+                        <input type="color" name="colors">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="comments">Additional Comments</label>
+                    </td>
+                    <td>
+                        <input type="textarea" placeholder="Please add any additional comments here" name="comments">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label></label>
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit">
                     </td>
                 </tr>
 

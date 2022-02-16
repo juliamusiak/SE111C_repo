@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>W6 | Demo 1</title>
+</head>
+<body>
+    
+    <h1>W6 JS Intro Demo </h1>
+    <!--IN DOC javascript-->
+
+    <script>
+        // in here we can only type in javascript (single line comment)
+
+        //DEClARING VARIABLES use keyword def; vars must be declared before they can be assigned
+        var num     //declaration only
+        console.log(num) 
+
+        //ASSIGNMENT - assigning and storing data to a variable (friendly name)
+        num = 7
+
+        //DECLARE and ASSIGN AT ONCE
+        var num1 = 10
+        var num2 = 7
+
+        //once variables have data assigned, they can be used in output/input/processing/conditions
+
+        //MATHEMATICAL PROCESSING
+        var sum = num1 + num2
+
+        //with assignment, everything to the right of the equal sign is processed FIRST! storage occurs from the result of the right into the left
+        console.log(sum) 
+
+        //OUTPUT -- display of information from the program to a user/human
+
+        //output for testing - dev only
+        console.log(`Hello World!`) //msg only
+        console.log(num1) //value only
+
+        //we can also mix msgs and stored values by using LITERAL STRINGS ` `
+        //`${VAR}` will be replaced by stored value 
+        console.log(`The sum of ${num1} + ${num2} = ${sum}`) 
+
+        //output for user - displayed to browser page
+        //alert() creates a pop-up; further lines will not be read until user interacts with OK button
+        alert(`Hello World!`)
+
+        console.log(`alert existed`)
+
+        alert(`The sum of ${num1} + ${num2} = ${sum}`)
+
+        //INPUT - gaining data from the user (or somewhere else :D) into the program code
+        //when asking a user for input, we need to use it some way, so we store the result from a variable
+        var name = prompt(`Enter name here: `)
+
+        console.log(name)
+
+        var last = prompt(`Enter your last name: `)
+
+        //concatenation: adding strings together
+        var full = "Madam " + name + " " + last 
+        console.log(full)
+
+        alert(`Your full name is: ${full}`)
+
+
+    </script>
+
+
+
+</body>
+</html>
