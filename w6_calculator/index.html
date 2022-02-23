@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author"content="Julia Musiak">
+        <meta name="description" content="W6 | Pay Calculator">
+
+        <title>W6 | Pay Calculator</title>
+
+    </head>
+    
+    <body>
+        <script>
+
+            var hourlyPay = prompt (`What is your hourly pay?`)
+
+            var hoursWorked = prompt (`How many hours have you worked this week?`)
+
+            var grossPay = (hourlyPay * hoursWorked).toFixed(2)
+            console.log(`Gross Pay: $${grossPay}`)
+
+            var tax = 0.20
+            var taxAmount = (tax * grossPay).toFixed(2)
+            console.log(`Tax Amount: $${taxAmount}`)
+
+            var netPay = (grossPay - taxAmount).toFixed(2)
+            console.log(`Net Pay: $${netPay}`)
+
+            alert(`Gross Pay: $${grossPay}
+            \nTax Amount: $${taxAmount}
+            \nNet Pay: $${netPay}`
+            )
+
+        </script>
+    </body>
+</html>
